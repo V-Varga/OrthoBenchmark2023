@@ -2,7 +2,7 @@
 
 Author: Vi Varga
 
-Last Updated: 10.11.2023
+Last Updated: 14.11.2023
 
 Description: Benchmarking scripts for orthologous clustering programs
 
@@ -79,6 +79,11 @@ MMseqs2 is an open source clustering program:
 conda create -n env-mmseqs2
 conda activate env-mmseqs2
 conda install -c bioconda mmseqs2
+conda list mmseqs2
+# # packages in environment at /storage/vivarga/.conda/envs/env-mmseqs2:
+# #
+# # Name                    Version                   Build  Channel
+# mmseqs2                   14.7e284        pl5321h6a68c12_2    bioconda
 conda deactivate
 # creating a YAML file
 conda env export -n env-mmseqs2 > env-mmseqs2.yml
@@ -393,6 +398,15 @@ python ../Scripts/og_clust_counts.py Orthology_Comparison_DB__26-10-2023--174514
 Finally creating plots to use on the poster with this data (script saved to `visualize_desc_stats.R`, made available in the Analysis_Scripts/ directory). 
 
 Cluster membership overlap is currently being assessed, but this work is still in-progress. Updates to come. 
+
+
+## Program Versions
+
+Program versions for four benchmarked orthologous clustering software: 
+ - CD-HIT 4.8.1
+ - Diamond 2.1.8
+ - MMseqs2 14.7e284
+ - USEARCH 8.0.1445_i86linux64
 
 
 ## References
